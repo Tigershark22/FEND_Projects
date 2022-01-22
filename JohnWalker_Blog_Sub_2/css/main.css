@@ -1,0 +1,246 @@
+@import "image-styles.css";
+@import "breakpoint.css";
+
+
+html{
+    background-color: white;
+    border-collapse: collapse;
+    font-size: 12px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+h1{
+    font-size: 12px;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+footer{
+    font-size: 10px;
+}
+
+
+.button{
+    background-color: chartreuse;
+}
+
+
+button:hover{
+    background-color: lightslategrey;
+}
+
+
+.header{
+    grid-area: hd;
+    border: 2px solid #000;
+    background-color: #a0b7c0; 
+    display: flex;
+    flex-direction: column;
+    align-content: space-around; 
+    justify-content: space-evenly;
+}
+
+
+.nav-container{
+    /* set display position here */
+     list-style-type: none;
+     display: flex;
+     background-color: inherit;
+     font-size: 0.95em;
+     align-content: space-around; 
+     justify-content: space-evenly;
+     border-bottom: 4px solid #000;
+     padding: 1em;
+}
+
+
+.nav-item{
+    text-decoration: underline;
+    align-self: center;
+}
+
+
+.blogs-sidebar{
+    grid-area: sb;
+    border: 2px solid #000;
+    color: black;
+    background-color: #4b5e26;
+}
+
+
+.home-sidebar{
+    grid-area: sb;
+    border: 2px solid #000;
+    color: black;
+    background-color: #4b5e26;
+}
+
+
+.contents{
+    grid-area: sc;
+    border: 2px solid #000;
+}
+
+
+.home-contents{
+    grid-area: hc;
+    border: 2px solid #000;
+    font-size: 3em;
+    background-image: url("../images/bigbend.jpg");
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: darkgray;
+}
+
+.footer{
+    grid-area: ft;
+    border: 2px solid #000;
+    background-color: #a0b7c0;
+    font-style: italic;
+    padding: 1%;
+    text-align: center;
+}
+
+
+.link-list{
+    list-style-type: none;
+    padding: 10px;
+    margin: 2px;
+}
+
+
+.link-item{
+    font-size: 30px;
+    color: yellow;
+    line-height: 50px;
+    margin: 2px;
+}
+
+
+.link-item:hover{
+    color:blueviolet;
+    font-size: 35px;
+}
+
+
+.links-page{
+    background-color: #4b5e26;
+    background-image: url("../images/avalanche.jpg");
+    height: 80vh;
+    object-fit: cover;
+}
+
+
+.doc-home{
+    color: #000;
+}
+
+
+.doc-blogs{
+    color: #000;
+}
+
+
+.doc-links{
+    color: #000;
+}
+
+
+.header-title{
+    color:navy;
+}
+
+
+/* Index page sidebar*/
+
+
+.main-quote{
+    font-size: .5em;
+    line-height: 1.1em;
+    color: white;
+}
+
+
+/* card css rules */
+
+
+.card-flex{
+    display: flex;
+    flex-direction: column;
+    background-color:dimgray;
+}
+
+
+.card-date-auth{
+    font-size: .75em;
+    color: navy;
+}
+
+
+.card-title{
+    color:darkcyan;
+    text-decoration: underline;
+}
+
+
+.card-top{
+    background-color: bisque;
+    margin: 0;
+}
+
+
+#card-1{
+    grid-area: c1;
+}
+
+
+#card-2{
+    grid-area: c2;  
+}
+
+
+#card-3{
+    grid-area: c3;
+}
+
+
+#card-4{
+    grid-area: c4;
+}
+
+
+/* About the Author */
+
+
+.avatar{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#email-anchor{
+    overflow-wrap: break-word;
+}
+
+
+.follow-anchor{
+    margin: 0px;
+}
+
+
+.follow-button{
+    background-color:white;
+    object-fit:  cover;
+
+}
+
+
+.about-author{
+    font-size: .95em;
+}

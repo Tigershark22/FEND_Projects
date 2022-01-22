@@ -1,0 +1,46 @@
+.mini-pic{
+    width: 100px;
+    height: 100px;
+}
+
+
+.med-pic{
+    width: 400px;
+    height: 400px;
+}
+
+
+.lrg-pic{
+    width: 1000px;
+    height: 1000px;
+}
+
+
+.fill-img{
+    background-color: #4b5e26;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#small-img{
+    width: 200px;
+    height: 200px;
+}
+
+
+.responsive-img{
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    flex: 1 1 200px;
+  }
+
+  
+  .follow-image{
+    max-width: 100%;
+}
+
+  
+

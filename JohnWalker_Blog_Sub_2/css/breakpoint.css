@@ -1,0 +1,199 @@
+/* Anything less than 500px will use this template because media query not active */
+.grid-home{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(4,1fr) repeat(2, 10%);
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd hd hd hd"
+    "hc hc hc hc hc hc hc hc hc hc hc hc"
+    "hc hc hc hc hc hc hc hc hc hc hc hc"
+    "hc hc hc hc hc hc hc hc hc hc hc hc"
+    "sb sb sb sb sb sb sb sb sb sb sb sb "
+    "ft ft ft ft ft ft ft ft ft ft ft ft";
+    border: solid #000;
+}
+
+
+/* If device width more than 500px but less than 1000px use template below */
+@media (min-width: 500px) and (max-width:1000px){
+    .grid-home{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(5,1fr) 5%;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd hd hd hd hd"
+        "sb sb hc hc hc hc hc hc hc hc hc hc"
+        "sb sb hc hc hc hc hc hc hc hc hc hc"
+        "sb sb hc hc hc hc hc hc hc hc hc hc"
+        "sb sb hc hc hc hc hc hc hc hc hc hc "
+        "ft ft ft ft ft ft ft ft ft ft ft ft";
+    }
+    .doc-home{
+        font-size: 18px;
+    }
+}
+
+
+/* If device width is greater than 1000px use template below  */
+@media (min-width: 1000px){
+    .grid-home{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(5,1fr) 5%;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd hd hd hd hd"
+        "sb sb sb hc hc hc hc hc hc hc hc hc"
+        "sb sb sb hc hc hc hc hc hc hc hc hc"
+        "sb sb sb hc hc hc hc hc hc hc hc hc"
+        "sb sb sb hc hc hc hc hc hc hc hc hc "
+        "ft ft ft ft ft ft ft ft ft ft ft ft";
+    }
+    .doc-home{
+        font-size: 25px;
+    }
+}
+
+/* Below are the Grids for Blog-Post Page */
+
+
+/* Anything less than 500px will use this template because media query not active */
+.div-blogs{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows:  5% repeat(5,1fr) 5%;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd hd hd hd"
+    "cd cd cd cd cd cd cd cd cd cd cd cd"
+    "cd cd cd cd cd cd cd cd cd cd cd cd"
+    "cd cd cd cd cd cd cd cd cd cd cd cd"
+    "cd cd cd cd cd cd cd cd cd cd cd cd"
+    "sb sb sb sb sb sb sb sb sb sb sb sb"
+    "ft ft ft ft ft ft ft ft ft ft ft ft";
+    border: solid #000;
+}
+
+
+/* If device width more than 500px but less than 1000px use template below */
+@media (min-width: 500px) and (max-width:1000px){
+    .div-blogs{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(6,1fr) 5%;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd hd hd hd hd"
+        "cd cd cd cd cd cd cd cd cd cd sb sb"
+        "cd cd cd cd cd cd cd cd cd cd sb sb"
+        "cd cd cd cd cd cd cd cd cd cd sb sb"
+        "cd cd cd cd cd cd cd cd cd cd sb sb"
+        "cd cd cd cd cd cd cd cd cd cd sb sb"
+        "ft ft ft ft ft ft ft ft ft ft ft ft";
+    }
+    .doc-blogs{
+        font-size: 18px;
+    }
+}
+
+
+/* If device width is greater than 1000px use template below  */
+@media (min-width: 1000px){
+    .div-blogs{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(6,1fr) 5%;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd hd hd hd hd"
+        "cd cd cd cd cd cd cd cd sb sb sb sb"
+        "cd cd cd cd cd cd cd cd sb sb sb sb"
+        "cd cd cd cd cd cd cd cd sb sb sb sb"
+        "cd cd cd cd cd cd cd cd sb sb sb sb"
+        "cd cd cd cd cd cd cd cd sb sb sb sb"
+        "ft ft ft ft ft ft ft ft ft ft ft ft";
+    }
+    .doc-blogs{
+        font-size: 25px;
+    }
+}
+
+
+/* Below are the Grids for Blog-Post Page Card Section*/
+
+
+/* Anything less than 500px will use this template because media query not active */
+.grid-card{
+    grid-area: cd;
+    display: grid;
+    gap: 0.2%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-template-areas: 
+    "c1 c1"
+    "c1 c1"
+    "c2 c2"
+    "c2 c2" 
+    "c3 c3"
+    "c3 c3"
+    "c4 c4"
+    "c4 c4";
+}
+
+
+/* If device width more than 500px but less than 1000px use template below */
+@media (min-width: 500px) and (max-width:1000px){
+    .grid-card{
+        display: grid;
+        gap: 0.2%;
+        grid-area: cd;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "c1 c1 c1 c2 c2 c2"
+        "c1 c1 c1 c2 c2 c2"
+        "c3 c3 c3 c4 c4 c4"
+        "c3 c3 c3 c4 c4 c4";
+    }
+}
+
+
+/* If device width is greater than 1000px use template below  */
+@media (min-width: 1000px){
+    .grid-card{
+        display: grid;
+        grid-area: cd;
+        gap: 0.2%;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas:
+        "c1 c1 c1 c2 c2 c2"
+        "c1 c1 c1 c2 c2 c2"
+        "c1 c1 c1 c2 c2 c2"
+        "c3 c3 c3 c4 c4 c4"
+        "c3 c3 c3 c4 c4 c4"
+        "c3 c3 c3 c4 c4 c4";
+    }
+}
+
+
+@media (min-width: 500px) and (max-width:1000px){
+    .doc-links{
+        font-size: 18px;
+    }
+    .header-title{
+        font-size: 20px;
+    }
+    .footer{
+        font-size: 0.75em;
+    }  
+}
+
+
+@media (min-width: 1000px){
+    .doc-links{
+        font-size: 25px;
+    }
+    .header-title{
+        font-size: 27px;
+    }
+    .footer{
+        font-size: 0.75em;
+    }
+}
